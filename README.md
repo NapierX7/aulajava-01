@@ -1,20 +1,39 @@
-# aulajava-01
-aulajava
 package aula01pt02;
 
 public class aula01pt02 {
 
-	public static void main(String[] args) {// inicio
-		int v1 = 10, v2 = 20;
+	public static void main(String[] args){int valor1 = 100, valor2 = 20;
+	somar(valor1, valor2);
+	subtrair(valor1, valor2);
+	multiplicar(valor1, valor2);
+	dividir(valor1, valor2);
+}
 
-		somar(v1, v2);
-	}// fim do main
+//METODOS
 
-	public static void somar(int a, int b) {
-		int soma = a + b;
+//SOMA
+public static void somar(int a, int b) {
+	int soma = a + b;
+	System.out.println("A soma dos dois numeros é: " + soma);
+}
 
-		System.out.println("A soma dos dois n é:" + soma);
- 
-	}
+//SUBTRAÇÃO
+public static void subtrair(int a, int b) {
+	int subtrair = a - b;
+	System.out.println("A subtração dos dois numeros é: " + subtrair);
+}
 
-}// fim da classe
+//MULTIPLICAÇÃO
+public static void multiplicar(int a, int b) {
+	int multiplicacao = a * b;
+	System.out.println("A multiplicação dos dois numeros é: " + multiplicacao);
+}
+
+//DIVISÃO
+public static void dividir(int a, int b) {
+	int divisao = a / b;
+	System.out.println("A divisão dos dois numeros é: " + divisao);
+}
+
+	
+}
