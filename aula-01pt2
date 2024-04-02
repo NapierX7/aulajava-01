@@ -1,0 +1,92 @@
+package aula01;
+
+public class aula01 {
+
+	public static void main(String[] args) {
+		String nome = "Victor Hugo";
+		int idade = 17;
+
+		Double altura = 1.84;
+
+		Double nota1 = 10.0;
+		Double nota2 = 10.0;
+		Double nota3 = 10.0;
+		Double nota4 = 10.0;
+
+		Double media = nota1 + nota2 + nota3 + nota4 / 4;
+		if (media > 6) {
+
+			System.out.println("Aprovado");
+		} else {
+			if (media >= 5 && media < 6) {
+				System.out.println("Recuperacao");
+			} else {
+				System.out.println("Reprovado");
+			}
+
+		}
+
+		switch (idade) {
+		case 40:
+			System.out.println(" Maior Idade");
+			break;
+		case 30:
+			System.out.println(" Melhor Idade");
+			break;
+		case 18:
+			System.out.println(" Inicio da Fase Adulta");
+			break;
+
+		default:
+			System.out.println(" Criança");
+			break;
+		}
+		// estrutura de repetição
+
+		int contador = 10;
+		while (contador > 0) {
+
+			System.out.print(contador--);
+		}
+
+		do {
+
+			System.out.println(contador++);
+
+		} while (contador < -1);
+
+		for (int i = 0; i < 10; i++) {
+			System.out.println(i);
+		}
+
+		System.out.println("");
+		System.out.println("Esses são os números pares");
+		System.out.println("");
+		
+		for (int i = 0; i <= 100; i++) {
+			// Verificando se o número é par usando o operador de módulo (%)
+			if (i % 2 == 0) {
+				System.out.println(i); // Se for par, imprime o número
+			}
+		}
+		
+		System.out.println("");
+		System.out.println("Esses são os números ímpares");
+		System.out.println("");
+		
+		for (int i = 0; i <= 100; i++) {
+		
+			if (i % 2 == 1) {
+				System.out.println(i); 
+				
+				
+				
+				
+				
+				
+				
+			}
+		}
+	}
+
+}
